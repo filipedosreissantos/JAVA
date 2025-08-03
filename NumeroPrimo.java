@@ -16,7 +16,12 @@ public class NumeroPrimo{
         for(int i = 1; i <= scan; i++) {
             if(scan % i == 0) {
                 counter++;
-                System.out.print(i + " ");
+                
+                if(scan == i) {
+                    System.out.print(i + " ");
+                } else {
+                    System.out.print(i + ", ");
+                }
             }
         }
         System.out.println("");
